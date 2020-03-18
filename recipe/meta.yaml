@@ -10,7 +10,7 @@ source:
   sha256: 4f2097492e4c76e948882fc859bfa033ade09bed72f8e6b328e34a3467d9a377
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - swift = swiftclient.shell:main
