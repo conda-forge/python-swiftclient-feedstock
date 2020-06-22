@@ -14,6 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - swift = swiftclient.shell:main
+  noarch: python
 
 requirements:
   host:
