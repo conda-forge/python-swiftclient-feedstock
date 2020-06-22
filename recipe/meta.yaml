@@ -19,11 +19,10 @@ requirements:
   host:
     - pbr
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - futures >=3.0.0  # [py==27]
-    - python
+    - python >=3.6
     - requests
     - setuptools
     - six
@@ -34,7 +33,7 @@ test:
 
 about:
   home: https://docs.openstack.org/python-swiftclient/latest/
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: OpenStack Object Storage API Client Library
