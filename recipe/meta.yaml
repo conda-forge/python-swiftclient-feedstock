@@ -1,5 +1,5 @@
 {% set name = "python-swiftclient" %}
-{% set version = "3.13.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2d26c90b6392f6befa7fbb16fcda7be44aa26e2ae8a5bee2705d1d1c813833f0
+  sha256: 57b6f1ff23b466843802a6816f4b6bbc6896b6ad05d6577afee7622be3a29538
 
 build:
   number: 0
@@ -26,7 +26,6 @@ requirements:
     - python >=3.6
     - requests
     - setuptools
-    - six
 
 test:
   imports:
