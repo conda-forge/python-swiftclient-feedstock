@@ -26,7 +26,6 @@ requirements:
     - python >=3.6
     - requests
     - setuptools
-    - six
 
 test:
   imports:
