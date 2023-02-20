@@ -25,7 +25,6 @@ requirements:
   run:
     - python >=3.6
     - requests
-    - setuptools
 
 test:
   imports:
