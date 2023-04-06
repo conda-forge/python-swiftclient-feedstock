@@ -1,11 +1,11 @@
-About python-swiftclient
-========================
+About python-swiftclient-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-swiftclient-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.openstack.org/python-swiftclient/latest/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-swiftclient-feedstock/blob/main/LICENSE.txt)
 
 Summary: OpenStack Object Storage API Client Library
 
