@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: d4d18540413893fc16ad87791d740f823f763435e8212e68eb53d60da2638233
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - swift = swiftclient.shell:main
@@ -20,14 +20,16 @@ requirements:
   host:
     - pbr
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - swiftclient
 
