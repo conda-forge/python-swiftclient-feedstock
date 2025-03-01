@@ -1,16 +1,16 @@
 {% set name = "python-swiftclient" %}
-{% set version = "4.6.0" %}
+{% set version = "4.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4d18540413893fc16ad87791d740f823f763435e8212e68eb53d60da2638233
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: afd7575753d8e49617adcb11550187fd0b120fcd819f1e782c0b538f2d093773
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - swift = swiftclient.shell:main
