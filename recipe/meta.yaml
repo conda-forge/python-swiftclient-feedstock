@@ -1,5 +1,5 @@
 {% set name = "python-swiftclient" %}
-{% set version = "4.7.0" %}
+{% set version = "4.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: afd7575753d8e49617adcb11550187fd0b120fcd819f1e782c0b538f2d093773
+  sha256: 44162cab469368cafdc25e0c8c4e95a2b9db1a44456a48ce080fe2ca9a4b3863
 
 build:
   number: 0
