@@ -1,13 +1,13 @@
 {% set name = "python-swiftclient" %}
-{% set version = "4.10.0" %}
+{% set version = "4.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 981891abc7fb355b266e823df3ecb80e5c267c57934fb5094bb102ddaf7e51be
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9d96146f5c2948c08cbf221eecfc3b87f2f631f1995e5e5d6e1b800ea74233cc
 
 build:
   number: 0
